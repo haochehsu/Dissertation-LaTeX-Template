@@ -38,12 +38,12 @@ class network_LSTM(nn.Module):
         super().__init__()
         self.hidden_size = hidden_size
         self.lstm = nn.LSTM(input_size, hidden_size)
-        
+
         # fully-connected
         self.linear = nn.Linear(hidden_size, output_size)
 
         self.hidden = (
-            torch.zeros(1, 1, self.hidden_size), 
+            torch.zeros(1, 1, self.hidden_size),
             torch.zeros(1, 1, self.hidden_size)
         )
 
@@ -52,6 +52,6 @@ class network_LSTM(nn.Module):
         prediction = self.linear(lstm_output.view(len(vec),-1))
         return prediction[-1]
 \end{lstlisting}
-  
-  \section{Conclusion}
-  \lipsum[7]
+
+\section{Conclusion}
+\lipsum[7]

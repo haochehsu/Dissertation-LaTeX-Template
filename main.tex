@@ -1,6 +1,6 @@
 \documentclass[letterpaper]{report}
 \usepackage{Style/arxiv, Style/package}
-\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue,anchorcolor=blue}
+
 %%%%%%%%%% ABBREVIATION %%%%%%%%%%
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\h}{\mathcal{H}}
@@ -54,7 +54,12 @@
 \cfoot{\hyperlink{page.\tocpage}{{\color{black}\thepage}}}}
 
 %%%%%%%%%% CUSTOMIZE %%%%%%%%%%
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue,anchorcolor=blue}
 \definecolor{mycolor}{HTML}{3D8A2B}
+\renewcommand*\thefootnote{\textcolor{red}{\arabic{footnote}}}
+\renewcommand*\listfigurename{LIST OF FIGURES}
+\renewcommand*\listtablename{LIST OF TABLES}
+\renewcommand{\contentsname}{TABLE OF CONTENTS}
 
 %%%%%%%%%% LISTING %%%%%%%%%%
 \lstdefinestyle{python_code}{
