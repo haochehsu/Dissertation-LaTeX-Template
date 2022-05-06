@@ -1,0 +1,370 @@
+\documentclass[letterpaper]{report}
+\usepackage{Style/arxiv, Style/style}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue,anchorcolor=blue}
+%%%%%%%%%% ABBREVIATION %%%%%%%%%%
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\h}{\mathcal{H}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Pn}{\mathbb{P}_n}
+\newcommand{\bs}{\boldsymbol}
+\newcommand{\sgn}{\mathrm{sign}}
+\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\trace}{\mathrm{trace}}
+\newcommand{\cov}{\mathrm{cov}}
+\newcommand{\var}{\mathrm{var}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\x}{{\bs X}}
+\newcommand{\g}{\cellcolor{gray!25}}
+\newcommand{\gline}{\rowcolor{gray!25}}
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{definition}{Definition}
+\newtheorem*{assumption}{Assumption}
+\newtheorem{lemma}{Lemma}
+\newtheorem{example}{Example}
+\newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
+\newtheorem{proposition}{Proposition}
+\renewcommand{\headeright}{~}
+\renewcommand{\undertitle}{~}
+\renewcommand{\shorttitle}{~}
+\def\lquote{\textquotedblleft}
+\def\rquote{\textquotedblright \ }
+
+%%%%%%%%%% STYLE %%%%%%%%%%
+\fancypagestyle{cover}{\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\the\year{}}}
+
+\fancypagestyle{copyright}{\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{Portions of Chapter 2 \copyright \ 2020 Someone's Name\\All other materials \copyright \ \the\year{} Your Name}}
+
+\fancypagestyle{preface}{\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\pagenumbering{roman}
+\fancyfoot[C]{\thepage}}
+
+\fancypagestyle{text}{\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\pagenumbering{arabic}
+\def\tocpage{iii}
+\cfoot{\hyperlink{page.\tocpage}{{\color{black}\thepage}}}}
+
+%%%%%%%%%% CUSTOMIZE %%%%%%%%%%
+\definecolor{mycolor}{HTML}{3D8A2B}
+
+%%%%%%%%%% LISTING %%%%%%%%%%
+\lstdefinestyle{python_code}{
+language=Python, % python, matlab, r
+basicstyle=\linespread{1}\footnotesize\ttfamily,
+numbers=left,
+numberstyle=\tiny,
+frame=tb,
+columns=fullflexible,
+showstringspaces=false,
+breaklines=true
+}
+
+%%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%% COVER %%%%%%%%%%
+\pagestyle{cover}
+{\fontsize{12.5}{12.5}\selectfont
+\begin{center}
+  
+  \vspace*{1.72cm}
+  UNIVERSITY OF CALIFORNIA,\\IRVINE
+  
+  \vspace*{1cm}
+  Title of the Thesis
+  
+  \vspace*{0.25cm}
+  DISSERTATION
+  
+  \vspace*{0.9cm}
+  Submitted in Partial Satisfaction of the Requirements
+  
+  for the degree of
+  
+  \vspace*{0.73cm}
+  DOCTOR OF PHILOSOPHY
+  
+  \vspace*{0.3cm}
+  in Economics
+  
+  \vspace*{0.9cm}
+  by
+  
+  \vspace*{0.9cm}
+  Your Name
+\end{center}
+
+\vfill
+\begin{flushright}
+  Dissertation Committee:
+  
+  Professor Name1 (Chair)
+  
+  Associate Professor Name2
+  
+  Associate Professor Name3
+  
+  Assistant Professor Name4
+\end{flushright}
+}
+%%%%%%%%%% COPYRIGHT %%%%%%%%%%
+\newpage
+
+\vfill
+\
+\pagestyle{copyright}
+
+\newpage
+\pagestyle{preface}
+\setcounter{page}{2}
+
+\begin{center}
+  \section*{DEDICATION}
+  
+  To someone for their support.
+\end{center}
+
+%%%%%%%%%% TOC %%%%%%%%%%
+\newpage
+{\hypersetup{linkcolor=black}
+\tableofcontents}
+\newpage
+{\hypersetup{linkcolor=black}
+\listoffigures}
+\addcontentsline{toc}{chapter}{\listfigurename}
+{\hypersetup{linkcolor=black}
+\listoftables}
+\addcontentsline{toc}{chapter}{\listtablename}
+
+%%%%%%%%%% ACKNOWLEDGMENTS %%%%%%%%%%
+\doublespacing
+\newpage
+\begin{center}
+  \section*{ACKNOWLEDGMENTS}
+  \addcontentsline{toc}{chapter}{ACKNOWLEDGMENTS}
+\end{center}
+
+I would like to thank NameOfCommitteeChair for his support and guidance over the past few years.
+
+I am grateful to some for her guidance.
+
+I am incredibly thankful to my colleagues at UC Irvine for their friendship and encouragement.
+
+I would like to thank many people. Last, but not least, I thank someone for their support over the years.
+
+
+%%%%%%%%%% CURRICULUM VITAE %%%%%%%%%%
+\newpage
+\begin{center}
+  \section*{CURRICULUM VITAE}
+  \addcontentsline{toc}{chapter}{CURRICULUM VITAE}
+  
+  {\fontsize{12}{12}\selectfont
+  \textbf{Your Name}
+  }
+\end{center}
+
+\textbf{EDUCATION}
+
+\textbf{Doctor of Philosophy in Economics\hfill YYYY}\\[-0.2cm]
+University of California, Irvine\hfill \textit{Irvine, CA}
+
+\textbf{Masters of Science in Economics\hfill YYYY}\\[-0.2cm]
+University of Wisconsin, Madison\hfill \textit{Madison, WI}
+
+\textbf{Bachelor of Arts in Economics\hfill YYYY}\\[-0.2cm]
+University of California, Los Angeles\hfill \textit{Los Angeles, CA}\\
+
+\textbf{FIELDS OF STUDY}\\
+Econometrics, Industrial Organization
+
+%%%%%%%%%% ABSTRACT %%%%%%%%%%
+\newpage
+\begin{center}
+  \section*{ABSTRACT OF THE DISSERTATION}
+  \addcontentsline{toc}{chapter}{ABSTRACT OF THE DISSERTATION}
+  
+  Title of the Thesis
+  
+  By
+  
+  Your Name
+  
+  Doctor of Philosophy in Economics
+  
+  University of California, Irvine, \the\year{}
+  
+  Professor NameOfCommitteeChair, Chair
+\end{center}
+\vspace*{1cm}
+
+The chapters of this dissertation explore different aspects in Economics.
+
+%%%%%%%%%% TEXT %%%%%%%%%%
+\newpage
+\pagestyle{text}
+\setcounter{page}{1}
+\doublespacing
+
+%%%%%%%%%% CH1 %%%%%%%%%%
+\chapter{Title of Chapter One}
+\input{Chapter1}
+
+%%%%%%%%%% CH2 %%%%%%%%%%
+\chapter{Title of Chapter Two}
+\input{Chapter2}
+
+%%%%%%%%%% CH3 %%%%%%%%%%
+\chapter{Title of Chapter Three}
+\input{Chapter3}
+
+%%%%%%%%%% Bibliography %%%%%%%%%%
+\bibliographystyle{Style/aea} % Style/ecta
+\bibliography{reference}
+\addcontentsline{toc}{chapter}{Bibliography}
+
+%%%%%%%%%% Appendices %%%%%%%%%%
+\begin{appendices}
+  
+  %%%%%%%%%% Appendix A %%%%%%%%%%
+  \chapter{}
+  \hlabel{ch1_proof}We will proof the following equation:
+  \begin{proof}
+    
+    Given $y$, $x$, $\Delta$, $\nu$, $\eta$, $\mathcal{L}$=
+    $\begin{pmatrix}
+    1 & 2 & 3 & 4 & 5 \\
+    3 & 4 & 5 & 6 & 7
+  \end{pmatrix}$, and $\prod=\begin{vmatrix}
+  A &B  &C \\
+  D&  E& F
+  \end{vmatrix}$, if
+  
+  \begin{center}
+    \begin{tabular}{ll}
+      $\begin{cases}
+      \text{trade}, & p(\text{trade})=\dfrac{y}{v}\\
+      \text{no trade}, & p(\text{no trade})=1-\dfrac{y}{v}
+      \end{cases}$\\
+    \end{tabular}
+  \end{center}
+  
+  then we have
+  
+  \begin{align}
+    \nonumber y&=\underset{\pi}{\E}\Big(\beta x + \epsilon\Big)\\
+    &\neq\sum\limits_{i}\beta_i(\underbrace{\alpha+\xi}_{\text{variables}}) + \epsilon\\
+    &\Longrightarrow \int_{0}^{10}r \left( \dfrac{r}{50} \right)dr\xlongequal{\text{text here}}\dfrac{r^{3}}{150}\biggr\rvert^{10}_{0}, \forall x\in (a,b)
+  \end{align}
+  So from $\widehat{ABCD}$, $\widetilde{ABCD}$, $\widehat{ABCD}$, $\overrightarrow{ABCD}$, and $\overline{ABCD}$, we get the desire $\underline{\text{result}}$.
+\end{proof}
+
+\begin{framed}
+  Consider $g(x)=f(x)-x$, since $f(x)$ and $x$ are continuous, then $g:[a,b]\to\mathbb{R}$ is continuous. Then
+  $$g(a)=f(a)-a>0, \ g(b)=f(b)-b<0$$
+  By IVT: $\exists c\in(a,b)$ s.t. $g(c)=0\implies \exists c\in(a,b)$ s.t. $f(c)-c=0\implies f(c)=c.$
+\end{framed}
+
+%%%%%%%%%% Appendix B %%%%%%%%%%
+\chapter{}\setcounter{table}{0}
+
+The data can be summarized by the tables below:
+
+\renewcommand*\arraystretch{0.95}
+\renewcommand{\tabcolsep}{6pt}
+\begin{table}[H]
+  \renewcommand{\thetable}{B.\arabic{table}a}
+  \caption{First Table}
+  \label{summary_a}
+  \fontsize{9}{11}\selectfont
+  \hspace*{-0.5cm}
+  \begin{tabular}{lrrrrrrrrr}
+    \toprule
+    Category                   & Total & Shares (\%) & Female & Male  & Asian & Black/AA & His./Latino & White/Cau. & Zeros (\%) \\ \hline
+    child care                 & 19.39 & 0.08   & 12.32  & 20.12 & 23.14 & 63.78    & 20.24       & 19.00      & 0.07  \\
+    eating                     & 30.35 & 6.12   & 35.97  & 6.23 & 24.61 & 21.58    & 38.18       & 2.02      & 0.00  \\
+    education                  & 9.91  & 0.04   & 9.94   & 90.54  & 9.69  & 7.99     & 10.64        & 10.14      & 0.90  \\
+    entertainment (not TV)     & 26.05 & 0.10   & 29.19  & 26.60 & 33.36 & 26.13    & 4.43       & 25.15      & 0.45  \\ \bottomrule
+  \end{tabular}
+  \hspace*{-1cm}
+  \begin{minipage}{1.065\textwidth}
+    \onehalfspacing
+    \vspace*{0.05cm}
+    \begin{tablenotes}
+      \footnotesize
+      \item\textit{Note:} This is the first table.
+    \end{tablenotes}
+  \end{minipage}
+\end{table}
+
+\renewcommand*\arraystretch{0.95}
+\renewcommand{\tabcolsep}{7.5pt}
+\begin{table}[H]
+  \addtocounter{table}{-1}
+  \renewcommand{\thetable}{B.\arabic{table}b}
+  \caption{Second Table}
+  \label{summary_b}
+  \fontsize{9}{11}\selectfont
+  \hspace*{-0.5cm}
+  \begin{tabular}{lrrrrrrrrr}
+    \toprule
+    Category                   & Total & Shares (\%) & Female & Male  & Asian & Black/AA & His./Latino & White/Cau. & Zeros (\%) \\ \hline
+    child care                 & 19.39 & 0.08   & 39.32  & 40.12 & 23.14 & 18.78    & 20.24       & 19.00      & 0.07  \\
+    personal care              & 13.92 & 0.06   & 24.00  & 23.14 & 16.12 & 1.76    & 15.15       & 13.66      & 0.00  \\
+    sports/exercise            & 20.44 & 0.08   & 20.38  & 31.00 & 24.99 & 25.48    & 20.71       & 20.07      & 0.53  \\
+    TV                         & 28.61 & 0.12   & 48.47  & 9.93 & 2.35 & 63.70    & 29.22       & 80.20      & 0.46  \\ \bottomrule
+  \end{tabular}
+  \hspace*{-1cm}
+  \begin{minipage}{1.065\textwidth}
+    \onehalfspacing
+    \vspace*{0.05cm}
+    \begin{tablenotes}
+      \footnotesize
+      \item\textit{Note:} This is the second table.
+    \end{tablenotes}
+  \end{minipage}
+\end{table}
+
+\begin{multicols}{2}
+  \raggedcolumns
+  
+  \begin{tikzpicture}[scale=.65]
+    \draw [<-] (0,7.8) node [left] {$x_2,y_2$} -- (0,0);
+    \draw [->] (0,0) -- (8.9,0) node [below] {$x_1,y_1$};
+    \node [left] at (0,6.45) {$P$};
+    \node [below] at (5.05,0) {$P'$};
+    \node [left] at (4.3,3.2) {$x^n$};
+    \node [below] at (2.4,5.4) {$y^f$};
+    \node [right] at (5.75,3.4) {$x^f$};
+    \draw (5.8,.5) -- (2.65,6.7);
+    \draw (.5,7.2) -- (7.7,1.7);
+    \draw (4.45,5.3) to [out=-90, in=140] (5.75,3.2) to [out=-40, in=160] (7.7,2.2);
+    \draw (4.15,4.3) to [out=-90, in=120] (4.55,3) to [out=-60, in=160] (7.4,1.1);
+    \draw (0,6.45) to [out=0, in=115] (4.4,3.2) to [out=-65, in=90] (5.05,0);
+  \end{tikzpicture}
+  
+  \columnbreak
+  
+  \begin{tikzpicture}[scale=0.9]
+    \draw [thick] (0,0) node [left] {$\Pi_3$} -- (3,1.8) node [below] {0} -- (3,5.4) node [right] {$\Pi_2$};
+    \draw [thick] (3,1.8) -- (6,0) node [right] {$\Pi_1$};
+    \draw [thick] (.4,.26) -- (3,4.8);
+    \draw [thick] (.4,.26) -- (5.55,.26) -- (3,4.8);
+    \node [thick,below] at (1,.26) {$(0,0,1)$};
+    \node [thick,right] at (3,5) {$(0,1,0)$};
+    \node [thick,right] at (5.65,.4) {$(1,0,0)$};
+  \end{tikzpicture}
+  
+\end{multicols}
+\end{appendices}
+
+\end{document}

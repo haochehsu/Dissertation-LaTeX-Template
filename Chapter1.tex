@@ -1,0 +1,55 @@
+This chapter explores the aspect of firm competitions. \lipsum[11]
+
+\section{Introduction}
+
+The {\color{mycolor}competition} can be illustrated with the following graph with the implementation is presented in Listing \ref{mypythoncode}:
+
+\begin{figure}[H]
+  \centering
+  \caption{This is a graph}
+  \hlabel{picture1}
+  \includegraphics[scale=0.5]{Graph/pic.pdf}
+  \hspace*{-0.6cm}
+  \begin{minipage}{0.9\textwidth}
+    \onehalfspacing
+    \vspace*{0.12cm}
+    \begin{tablenotes}
+      \footnotesize
+      \item\textit{Note:} some notes. The graph should be self-contained. \lipsum[66]
+    \end{tablenotes}
+  \end{minipage}
+\end{figure}
+
+\section{Model}
+\lipsum[4] The proof is discussed in Appendix \ref{ch1_proof}.
+
+\begin{theorem}[Envelope Theorem]
+  Only the direct effects of a change in an exogenous variable need be considered, even though the exogenous variable may enter the maximum value function indirectly as part of the solution to the endogenous choice variables.
+\end{theorem}
+
+\section{Comparative Statics}
+This is also demonstrated in Figure \ref{picture1}.
+
+\begin{lstlisting}[style=python_code, caption={Long short-term memory}, label=mypythoncode]
+class network_LSTM(nn.Module):
+    def __init__(self, input_size=1, hidden_size=256, output_size=1):
+        super().__init__()
+        self.hidden_size = hidden_size
+        self.lstm = nn.LSTM(input_size, hidden_size)
+        
+        # fully-connected
+        self.linear = nn.Linear(hidden_size, output_size)
+
+        self.hidden = (
+            torch.zeros(1, 1, self.hidden_size), 
+            torch.zeros(1, 1, self.hidden_size)
+        )
+
+    def forward(self,vec):
+        lstm_output, self.hidden = self.lstm(vec.view(len(vec),1,-1), self.hidden)
+        prediction = self.linear(lstm_output.view(len(vec),-1))
+        return prediction[-1]
+\end{lstlisting}
+  
+  \section{Conclusion}
+  \lipsum[7]
