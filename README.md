@@ -2,7 +2,7 @@
 
 This template is based on the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual/templates) from the UC-Irvine Libraries. The design uses the [arXiv style](https://github.com/kourgeorge/arxiv-style) which is based on the the [NeurIPS](https://nips.cc/) styling. The reference style includes [AEA](https://github.com/ShiroTakeda/econ-bst/blob/master/customization/econ-econometrica.bst) (lastname, firstname) and [Econometrica](https://github.com/ShiroTakeda/econ-bst/blob/master/customization/econ-aea.bst) (lastname, abbreviated firstname).
 
-📖 The compiled template PDF can be viewed [here](https://www.haochehsu.com/other/Dissertation_LaTeX_Template.pdf).
+🎉 The compiled template PDF can be viewed [here](https://www.haochehsu.com/other/Dissertation_LaTeX_Template.pdf).
 
 ---
 
