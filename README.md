@@ -28,7 +28,7 @@ User only need to customize the `package.sty` in the `Style` folder and edit the
 
 #### Online
 
-For online TeX editing, [download](https://github.com/howardhsumail/Dissertation-Template/archive/refs/heads/main.zip) the template, upload all the files and folders to [Overleaf](https://www.overleaf.com/), and compile the `main.tex`.
+For online TeX editing, [download](https://github.com/howardhsumail/Dissertation-Template/archive/refs/heads/main.zip) the template, upload all the files and folders to [Overleaf](https://www.overleaf.com/), and compile the `main.tex` as demonstraed [here](https://www.overleaf.com/read/ptbfthrmnmrv).
 
 #### Offline
 
