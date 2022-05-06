@@ -12,7 +12,7 @@ Various LaTeX syntaxes are also demonstrated throughout the document such as spa
 
 ### 🖋 The Template
 This template includes:
-  - Setting: `package.sty`
+  - Settings: `package.sty`
   - Content: `main.tex`, `Chapter1.tex`, `Chapter2.tex`, `Chapter3.tex`, `reference.bib` (references database)
   - Style files:
     - arXiv style: `arxiv.sty`
