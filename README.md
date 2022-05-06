@@ -1,6 +1,8 @@
 # Dissertation LaTeX Template
 
-This thesis template is based on the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual/templates) from the UC-Irvine Libraries. The design uses the `arXiv` style file and the template can be previewed [here](https://www.haochehsu.com/other/Dissertation_LaTeX_Template.pdf).
+This template is based on the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual/templates) from the UC-Irvine Libraries. The design uses the [arXiv style](https://github.com/kourgeorge/arxiv-style) which is based on the the NIPS styling.
+
+The compiled template PDF can be viewed [here](https://www.haochehsu.com/other/Dissertation_LaTeX_Template.pdf).
 
 This template includes:
   - Package: `style.sty`
