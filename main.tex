@@ -243,7 +243,8 @@ The chapters of this dissertation explore different aspects in Economics.
 \begin{appendices}
   
   %%%%%%%%%% Appendix A %%%%%%%%%%
-  \chapter{}
+  \chapter{Chapter 1}
+  
   \hlabel{ch1_proof}We will proof the following equation:
   \begin{proof}
     
@@ -282,7 +283,9 @@ The chapters of this dissertation explore different aspects in Economics.
 \end{framed}
 
 %%%%%%%%%% Appendix B %%%%%%%%%%
-\chapter{}\setcounter{table}{0}
+\chapter{Chapter 2}
+
+\setcounter{table}{0}
 
 The data can be summarized by the tables below:
 
@@ -341,6 +344,13 @@ The data can be summarized by the tables below:
   \end{minipage}
 \end{table}
 
+%%%%%%%%%% Appendix C %%%%%%%%%%
+\chapter{Chapter 3}
+
+We graph with \texttt{tikz} in \LaTeX. \lipsum[77]
+
+\vspace*{1cm}
+
 \begin{multicols}{2}
   \raggedcolumns
   
@@ -361,7 +371,7 @@ The data can be summarized by the tables below:
   
   \columnbreak
   
-  \begin{tikzpicture}[scale=0.9]
+  \begin{tikzpicture}[scale=0.9]\hlabel{triangle}
     \draw [thick] (0,0) node [left] {$\Pi_3$} -- (3,1.8) node [below] {0} -- (3,5.4) node [right] {$\Pi_2$};
     \draw [thick] (3,1.8) -- (6,0) node [right] {$\Pi_1$};
     \draw [thick] (.4,.26) -- (3,4.8);
