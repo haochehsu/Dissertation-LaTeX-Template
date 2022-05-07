@@ -38,6 +38,8 @@ For local editing, [download](https://github.com/howardhsumail/Dissertation-LaTe
 
 For help, comments, bug reporting, and change requests, please [contact](mailto:howardhsumail@gmail.com) the [author](https://www.haochehsu.com/). You can use or redistribute this project, however, the author takes no responsibility for whatever usage of this template. Finally, you are very welcome to contribute to this template.
 
+For **Thesis LaTeX Template**, please go to this [link](https://github.com/howardhsumail/Thesis-LaTeX-Template.git).
+
 ---
 
 The UCI dissertation template on overleaf can be accessed [here](https://www.overleaf.com/latex/templates/university-of-california-irvine-thesis/bzsqmxszcpny). The compiled UCI template PDF can be viewed [here](https://www.haochehsu.com/other/uci_thesis_template.pdf).
