@@ -8,7 +8,7 @@ Various LaTeX syntaxes are also demonstrated throughout the document such as spa
 
 🎉 The compiled dissertation PDF can be viewed [here](https://www.haochehsu.com/other/Dissertation_LaTeX_Template.pdf).
 
-For **Thesis LaTeX Template**, please go to this [link](https://github.com/howardhsumail/Thesis-LaTeX-Template.git).
+For **Paper LaTeX Template**, please go to this [link](https://github.com/howardhsumail/Thesis-LaTeX-Template.git).
 
 ---
 
@@ -35,6 +35,28 @@ For online editing, [download](https://github.com/howardhsumail/Dissertation-LaT
 #### Offline
 
 For local editing, [download](https://github.com/howardhsumail/Dissertation-LaTeX-Template/archive/refs/heads/main.zip) the template and edit it with [Texmaker](https://www.xm1math.net/texmaker/) or [TeXstudio](https://www.texstudio.org/) (requires [MacTeX](https://www.tug.org/mactex/) for Mac and [MiKTeX](https://miktex.org/download) for Windows) or [Texpad](https://apps.apple.com/us/app/texpad-latex-editor/id458866234?mt=12).
+
+### ⚙️ Font Size
+
+The font size of this template is **12** point type with **14.4** points line height to match the Dissertation Formatting Manual.
+
+The default (NIPS styling) is 10pt, with 11 points vertical spacing. To modify the font size, go to `Style/arxiv.sty` line 53 and use the roman numerals below to change the format:
+
+```tex
+\@setfontsize\normalsize\@<fontSize>\@<lineHeight>
+```
+
+For Example:
+
+```tex
+% NIPS Default (10pt with 11 points line height)
+\@setfontsize\normalsize\@xpt\@xipt
+```
+
+#### TeX Default Roman Numerals Point Types 
+`vpt`: 5, `vipt`: 6, `viipt`: 7, `viiipt`: 8, `ixpt`: 9, `xpt`: 10, `xipt`: 10.95
+
+`xiipt`: 12, `xivpt`: 14.4, `xviipt`: 17.28, `xxpt`: 20.74, `xxvpt`: 24.88
 
 ### 📒 General Notes
 
