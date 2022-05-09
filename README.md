@@ -8,7 +8,7 @@ Various LaTeX syntaxes are also demonstrated throughout the document such as spa
 
 🎉 The compiled dissertation PDF can be viewed [here](https://www.haochehsu.com/other/Dissertation_LaTeX_Template.pdf).
 
-For **Paper LaTeX Template**, please go to this [link](https://github.com/howardhsumail/Thesis-LaTeX-Template.git).
+For **Paper LaTeX Template**, please go to this [link](https://github.com/howardhsumail/Paper-LaTeX-Template.git).
 
 ---
 
