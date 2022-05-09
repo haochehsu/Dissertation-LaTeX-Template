@@ -64,4 +64,4 @@ For help, comments, bug reporting, and change requests, please [contact](mailto:
 
 ---
 
-The UCI dissertation template on overleaf can be accessed [here](https://www.overleaf.com/latex/templates/university-of-california-irvine-thesis/bzsqmxszcpny). The compiled UCI template PDF can be viewed [here](https://www.haochehsu.com/other/uci_thesis_template.pdf).
+The UCI dissertation template on overleaf can be accessed [here](https://www.overleaf.com/latex/templates/university-of-california-irvine-thesis/bzsqmxszcpny). The compiled UCI template PDF can be viewed [here](https://www.haochehsu.com/other/uci_thesis_template.pdf). The major/degree database is [here](https://www.reg.uci.edu/mdsd/). The submission deadline is [here](https://etd.lib.uci.edu/).
