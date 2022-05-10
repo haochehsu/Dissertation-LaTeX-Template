@@ -1,6 +1,6 @@
 # Dissertation LaTeX Template
 
-This double-spaced template is based on the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual/home) from the UC-Irvine Libraries. The design uses the [arXiv style](https://github.com/kourgeorge/arxiv-style) which is based on the the [NeurIPS](https://nips.cc/) styling. The reference style includes [AEA](https://github.com/ShiroTakeda/econ-bst/blob/master/customization/econ-aea.bst) (lastname, firstname) and [Econometrica](https://github.com/ShiroTakeda/econ-bst/blob/master/customization/econ-econometrica.bst) (lastname, abbreviated firstname).
+This double-spaced template is based on the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual/home)[^1] from the UC-Irvine Libraries. The design uses the [arXiv style](https://github.com/kourgeorge/arxiv-style) which is based on the the [NeurIPS](https://nips.cc/) styling. The reference style includes [AEA](https://github.com/ShiroTakeda/econ-bst/blob/master/customization/econ-aea.bst) (lastname, firstname) and [Econometrica](https://github.com/ShiroTakeda/econ-bst/blob/master/customization/econ-econometrica.bst) (lastname, abbreviated firstname).
 
 Based on the NIPS styling, it makes this dissertation template esthetic and convenient for reading. Instead of integrating the formatting into a single style file, this template defines the styles and format in the `main.tex` preambles and collects all the imported packages in the `package.sty` making the source more transparent and easier to customize.
 
@@ -38,12 +38,11 @@ For local editing, [download](https://github.com/howardhsumail/Dissertation-LaTe
 
 ### ⚙️ Font Size
 
-The font size of this template is **12pt** following the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual/specifics). The default (NIPS styling) is 10pt. To modify the font size, go to "FONT SIZE" preamble in `main.tex` and either comment out `\input{size11.clo}` (11pt) or select `\input{size12.clo}` (12pt).
+The font size of this template is **12pt** following the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual/specifics)[^2]. The default (NIPS styling) is 10pt. To modify the font size, go to "FONT SIZE" preamble in `main.tex` and either select `\input{size11.clo}` (11pt) or comment out `\input{size12.clo}` (12pt).
 
 ### 📒 General Notes
 
 For help, comments, bug reporting, and change requests, please [contact](mailto:howardhsumail@gmail.com) the [author](https://www.haochehsu.com/). You can use or redistribute this project, however, the author takes no responsibility for whatever usage of this template. Finally, you are very welcome to contribute to this template.
 
----
-
-The UCI dissertation template is [here](https://guides.lib.uci.edu/gradmanual/templates) with an overleaf version accessible [here](https://www.overleaf.com/latex/templates/university-of-california-irvine-thesis/bzsqmxszcpny). The compiled UCI template PDF can be viewed [here](https://www.haochehsu.com/other/uci_thesis_template.pdf). The major/degree database is [here](https://www.reg.uci.edu/mdsd/). The submission deadline is [here](https://etd.lib.uci.edu/).
+[^1]: The UCI dissertation template is [here](https://guides.lib.uci.edu/gradmanual/templates) with an overleaf version accessible [here](https://www.overleaf.com/latex/templates/university-of-california-irvine-thesis/bzsqmxszcpny). The compiled UCI template PDF can be viewed [here](https://www.haochehsu.com/other/uci_thesis_template.pdf). The major/degree database is [here](https://www.reg.uci.edu/mdsd/). The submission deadline is [here](https://etd.lib.uci.edu/).
+[^2]: The font size must be at least 10pt.
