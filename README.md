@@ -45,4 +45,4 @@ The font size of this template is **12pt** following the [Dissertation Formattin
 For help, comments, bug reporting, and change requests, please [contact](mailto:howardhsumail@gmail.com) the [author](https://www.haochehsu.com/). You can use or redistribute this project, however, the author takes no responsibility for whatever usage of this template. Finally, you are very welcome to contribute to this template.
 
 [^1]: The UCI dissertation template is [here](https://guides.lib.uci.edu/gradmanual/templates) with an overleaf version accessible [here](https://www.overleaf.com/latex/templates/university-of-california-irvine-thesis/bzsqmxszcpny). The compiled UCI template PDF can be viewed [here](https://www.haochehsu.com/other/uci_thesis_template.pdf). The major/degree database is [here](https://www.reg.uci.edu/mdsd/). The submission deadline is [here](https://etd.lib.uci.edu/).
-[^2]: The font size must be at least 10pt.
+[^2]: The font size must be at least 10pt. The recommended font size for Times New Roman is 12pt.
