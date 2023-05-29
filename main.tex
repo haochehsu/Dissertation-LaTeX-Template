@@ -22,7 +22,12 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem*{theorem*}{Theorem}
 \newtheorem*{definition}{Definition}
-\newtheorem*{assumption}{Assumption}
+\newtheorem{assumption}{Assumption}
+\newtheorem{assumptionalt}{Assumption}[assumption]
+\newenvironment{assumptionp}[1]{
+  \renewcommand\theassumptionalt{#1}
+  \assumptionalt
+}{\endassumptionalt}
 \newtheorem{lemma}{Lemma}
 \newtheorem{example}{Example}
 \newtheorem{corollary}{Corollary}
@@ -144,12 +149,12 @@ I am incredibly thankful to my colleagues at UC Irvine for their friendship and 
 
 Download this template at the \href{https://github.com/howardhsumail/Dissertation-LaTeX-Template.git}{Github repository}. \lipsum[75]
 
-%%%%%%%%%% CURRICULUM VITAE %%%%%%%%%%
+%%%%%%%%%% VITA %%%%%%%%%%
 \clearpage
 \onehalfspacing
 \begin{center}
-  \section*{CURRICULUM VITAE}
-  \addcontentsline{toc}{chapter}{CURRICULUM VITAE}
+  \section*{VITA}
+  \addcontentsline{toc}{chapter}{VITA}
   \textbf{Your Name}
 \end{center}
 {\parindent0pt
