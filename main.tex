@@ -124,14 +124,46 @@ Assistant Professor D}
 
 %%%%%%%%%% TOC %%%%%%%%%%
 \clearpage
-{\hypersetup{linkcolor=black}
-\tableofcontents}
-{\hypersetup{linkcolor=black}
-\listoffigures}
+\makeatletter
+\begin{center}
+\section*{TABLE OF CONTENTS}
+\end{center}
+\vspace*{2.25em \@plus\p@}
+\phantomsection
+{\hypersetup{linkcolor=black}\@starttoc{toc}}
+\makeatother
+
+\clearpage
+\makeatletter
+\begin{center}
+\section*{LIST OF FIGURES}
+\end{center}
+\vspace*{2.25em \@plus\p@}
+\phantomsection
+{\hypersetup{linkcolor=black}\@starttoc{lof}}
+\makeatother
 \addcontentsline{toc}{chapter}{\listfigurename}
-{\hypersetup{linkcolor=black}
-\listoftables}
+
+\clearpage
+\makeatletter
+\begin{center}
+\section*{LIST OF TABLES}
+\end{center}
+\vspace*{2.25em \@plus\p@}
+\phantomsection
+{\hypersetup{linkcolor=black}\@starttoc{lot}}
+\makeatother
 \addcontentsline{toc}{chapter}{\listtablename}
+
+% \clearpage
+% {\hypersetup{linkcolor=black}
+% \tableofcontents}
+% {\hypersetup{linkcolor=black}
+% \listoffigures}
+% \addcontentsline{toc}{chapter}{\listfigurename}
+% {\hypersetup{linkcolor=black}
+% \listoftables}
+% \addcontentsline{toc}{chapter}{\listtablename}
 
 %%%%%%%%%% ACKNOWLEDGMENTS %%%%%%%%%%
 \clearpage
@@ -157,6 +189,7 @@ Download this template at the \href{https://github.com/howardhsumail/Dissertatio
   \addcontentsline{toc}{chapter}{VITA}
   \textbf{Your Name}
 \end{center}
+\vspace*{2.25em}
 {\parindent0pt
 \textbf{EDUCATION}
 
@@ -168,6 +201,16 @@ University of Wisconsin, Madison\hfill \textit{Madison, WI}
 
 \textbf{Bachelor of Arts in Economics\hfill YYYY}\\[-0.1cm]
 University of California, Los Angeles\hfill \textit{Los Angeles, CA}\\
+
+\textbf{RESEARCH EXPERIENCE}
+
+\textbf{Graduate Student Researcher\hfill YYYY}\\[-0.1cm]
+University of California, Irvine\hfill \textit{Irvine, CA}\\
+
+\textbf{TEACHING EXPERIENCE}
+
+\textbf{Teaching Assistant\hfill YYYY-YYYY}\\[-0.1cm]
+University of California, Irvine\hfill \textit{Irvine, CA}\\
 
 \textbf{FIELDS OF STUDY}\\
 Econometrics, Industrial Organization}
