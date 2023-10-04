@@ -22,7 +22,7 @@ This template includes:
 
 ### 📐 Usage
 
-User only need to customize the `package.sty` in the `Style` folder and edit the 5 **Content** files. Bibliography style is located in `main.tex`: 
+Users only need to customize the `package.sty` in the `Style` folder and edit the 5 **Content** files. The bibliography style is located in `main.tex`: 
 
 ```tex
 \bibliographystyle{Style/aea} # Style/ecta
@@ -30,7 +30,7 @@ User only need to customize the `package.sty` in the `Style` folder and edit the
 
 #### Online
 
-For online editing, [download](https://github.com/howardhsumail/Dissertation-LaTeX-Template/archive/refs/heads/main.zip) the template, upload all the files and folders to [Overleaf](https://www.overleaf.com/), and compile the `main.tex` as demonstrated [here](https://www.overleaf.com/read/ptbfthrmnmrv).
+For online editing, [download](https://github.com/howardhsumail/Dissertation-LaTeX-Template/archive/refs/heads/main.zip) the template, upload all the files and folders to [Overleaf](https://www.overleaf.com/) and compile the `main.tex` as demonstrated [here](https://www.overleaf.com/read/ptbfthrmnmrv).
 
 #### Offline
 
@@ -38,11 +38,11 @@ For local editing, [download](https://github.com/howardhsumail/Dissertation-LaTe
 
 ### ⚙️ Font Size
 
-The font size of this template is **12pt** following the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual/specifics)[^2]. The default (NIPS styling) is 10pt. To modify the font size, go to "FONT SIZE" preamble in `main.tex` and either select `\input{size11.clo}` (11pt) or comment out `\input{size12.clo}` (12pt).
+The font size of this template is **12pt** following the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual/specifics)[^2]. The default (NIPS styling) is 10pt. To modify the font size, go to the "FONT SIZE" preamble in `main.tex` and either select `\input{size11.clo}` (11pt) or comment out `\input{size12.clo}` (12pt).
 
 ### 📒 General Notes
 
-For help, comments, bug reporting, and change requests, please [contact](mailto:howardhsumail@gmail.com) the [author](https://www.haochehsu.com/). You can use or redistribute this project, however, the author takes no responsibility for whatever usage of this template. Finally, you are very welcome to contribute to this template.
+For help, comments, bug reporting, and change requests, please [contact](mailto:howard@hsu.xyz) the [author](https://haochehsu.com). You can use or redistribute this project, however, the author takes no responsibility for whatever template usage. Finally, you are very welcome to contribute to this template.
 
 [^1]: The UCI dissertation template is [here](https://guides.lib.uci.edu/gradmanual/templates) with an overleaf version accessible [here](https://www.overleaf.com/latex/templates/university-of-california-irvine-thesis/bzsqmxszcpny). The compiled UCI template PDF can be viewed [here](https://www.haochehsu.com/other/uci_thesis_template.pdf). The major/degree database is [here](https://www.reg.uci.edu/mdsd/). The submission deadline is [here](https://etd.lib.uci.edu/).
 [^2]: The font size must be at least 10pt. The recommended font size for Times New Roman is 12pt.
