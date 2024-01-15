@@ -38,7 +38,7 @@ For local editing, [download](https://github.com/howardhsumail/Dissertation-LaTe
 
 ### ⚙️ Font Size
 
-The font size of this template is **12pt** following the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual/specifics)[^2]. The default (NIPS styling) is 10pt. To modify the font size, go to the "FONT SIZE" preamble in `main.tex` and either select `\input{size11.clo}` (11pt) or comment out `\input{size12.clo}` (12pt).
+The font size of this template is **12pt** following the [Dissertation Formatting Manual](https://guides.lib.uci.edu/gradmanual)[^2]. The default (NIPS styling) is 10pt. To modify the font size, go to the "FONT SIZE" preamble in `main.tex` and either select `\input{size11.clo}` (11pt) or comment out `\input{size12.clo}` (12pt).
 
 ### 📒 General Notes
 
