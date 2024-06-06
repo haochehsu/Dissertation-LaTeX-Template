@@ -2,6 +2,15 @@
 \usepackage[colorlinks=true,linkcolor=Blue,urlcolor=Blue,citecolor=Blue,anchorcolor=Blue]{hyperref}
 \usepackage{Style/arxiv, Style/package}
 
+%%%%%%%%%% CUSTOM TOC %%%%%%%%%%
+\usepackage{titletoc}
+\titlecontents{chapter}
+  [0em] % left margin
+  {\vspace{1ex}}% Space above the entry
+  {\normalfont\contentslabel{1.5em}\normalfont} % Number bold, title normal font
+  {\hspace{-1.5em}}% Numbered entry format without number
+  {\titlerule*[0.5pc]{.}\normalfont\contentspage} % Filler-page format (dot leaders and bold page number)
+  
 %%%%%%%%%% ABBREVIATIONS %%%%%%%%%%
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\h}{\mathcal{H}}
@@ -191,28 +200,28 @@ Download this template at the \href{https://github.com/howardhsumail/Dissertatio
 \end{center}
 \vspace*{2.25em}
 {\parindent0pt
-\textbf{EDUCATION}
+EDUCATION
 
-\textbf{Doctor of Philosophy in Economics\hfill YYYY}\\[-0.1cm]
+Doctor of Philosophy in Economics\hfill YYYY\\[-0.1cm]
 University of California, Irvine\hfill \textit{Irvine, CA}
 
-\textbf{Masters of Science in Economics\hfill YYYY}\\[-0.1cm]
-University of Wisconsin, Madison\hfill \textit{Madison, WI}
+Masters of Science in Economics\hfill YYYY\\[-0.1cm]
+University of Wisconsin, Madison\hfill Madison, WI
 
-\textbf{Bachelor of Arts in Economics\hfill YYYY}\\[-0.1cm]
-University of California, Los Angeles\hfill \textit{Los Angeles, CA}\\
+Bachelor of Arts in Economics\hfill YYYY\\[-0.1cm]
+University of California, Los Angeles\hfill Los Angeles, CA\\
 
-\textbf{RESEARCH EXPERIENCE}
+RESEARCH EXPERIENCE
 
-\textbf{Graduate Student Researcher\hfill YYYY}\\[-0.1cm]
-University of California, Irvine\hfill \textit{Irvine, CA}\\
+Graduate Student Researcher\hfill YYYY\\[-0.1cm]
+University of California, Irvine\hfill Irvine, CA\\
 
-\textbf{TEACHING EXPERIENCE}
+TEACHING EXPERIENCE
 
-\textbf{Teaching Assistant\hfill YYYY-YYYY}\\[-0.1cm]
-University of California, Irvine\hfill \textit{Irvine, CA}\\
+Teaching Assistant\hfill YYYY-YYYY\\[-0.1cm]
+University of California, Irvine\hfill Irvine, CA\\
 
-\textbf{FIELDS OF STUDY}\\
+FIELDS OF STUDY\\
 Econometrics, Industrial Organization}
 
 %%%%%%%%%% ABSTRACT %%%%%%%%%%
